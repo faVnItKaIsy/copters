@@ -1,0 +1,587 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+    font-family: "Kurale";
+    font-family: "Poppins";
+    font-family: "Piazzolla";
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("");
+}
+.main{
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+body{
+    width: 100%;
+   /*max-width: 1920px;
+   min-width: 300px;*/
+    background-color: #2E3957; /**/
+}
+
+
+.menu{
+display: none;
+}
+
+
+.nav{
+    background-color: #0C9CEA;
+   width: 100%;
+    height: 60px;
+    
+}
+.nav2{
+  
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+    
+}
+
+.footerNav{
+  color:#0E145B;
+  text-decoration: none;
+  font-size: 20px;
+}
+.footerNav:hover{
+  text-decoration: underline;
+}
+
+.logo{
+  
+    width: 90px;
+}
+.navigation{
+    text-decoration: none;
+    color:#0E145B;
+    border: 2px solid #D7E4F4;
+    border-radius: 15px;
+    padding: 10px;
+    /*margin: 10px;*/
+    
+}
+
+.navigation:hover{
+  background-color: #0E145B;
+  color: #FFFFFF;
+}
+
+.star{
+  margin-left: 5px;
+}
+
+.label{
+  font-size: 23px;
+  font-family: "Kurale";
+}
+
+#pRegistration{
+  font-size: 40px;
+  margin: 10px;
+  color: #0E145B;
+  font-family: "Kurale";
+}
+
+.forma{
+ margin: 30px 100px;/* */
+  background-color: #A1D1F5;
+  padding: 10px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.inp{
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  width: 280px;
+  margin-bottom: 10px; 
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  padding: 5px;
+}
+
+/**/.success{
+  border-color: green;
+}
+.error{
+  border: 1px solid red;
+  
+}
+
+
+
+.showPassword{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.checkboxPass{
+  font-family: "Poppins";
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  
+  margin: 10px 0 10px 0;
+}
+
+.sub{
+  font-size: 25px;
+  font-family: "Kurale";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 60px;
+  border-radius: 15px;
+  color: #FFFFFF;
+  background-color: #0E145B;
+  border: 2px solid #0E145B;
+  margin: 10px;
+}
+
+/*.sub:disabled { 
+  background-color:#aaa; 
+  border: 1px solid #666; 
+}
+.sub:disabled { 
+  background-color:#aaa; 
+  border: 1px solid #666; 
+}
+.sub:hover:enabled{
+  background-color: #9e4bd2;
+}*/
+
+
+.formaReg{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  border-radius: 10px;
+  
+}
+
+#passportSeries{
+  width: 100px;
+  margin-right: 5px;
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 10px; 
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  padding: 5px;
+}
+#passportNumber{
+  width: 170px;
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 10px; 
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  padding: 5px;
+  
+}/**/
+#passports{
+display: flex;
+flex-direction: row;
+}
+
+/*.dateB{
+  width: 260px;
+  
+}*/
+
+#pName1, #pName2,
+#pSurname1, #pSurname2,
+#pLogin1, #pLogin2, #pPatronymic,
+#pPassport1,#pPassport2,
+#pPhone1, #pPhone2,
+#pDateB1, #pDateB2,
+#pPassword1, #spanPassword2, #spanPassword2,
+#pPasswordRepete1, #pPasswordRepete2 {
+    display: none;
+    color:red;
+    margin:5px;
+    font-size: 18px;
+    width: 280px;
+   }
+   
+  /* #spanPassword2{
+    width: 280px;
+   }*/
+
+
+   .navSub{
+    text-decoration: none;
+   }
+
+.spanStar{
+  padding-top: 10px;
+    width: 280px;
+    font-family: "Poppins";
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    justify-content: center;
+    color:rgb(0, 0, 0);
+}
+   .link{
+    padding: 20px 0;
+    width: 280px;
+    font-family: "Poppins";
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    justify-content: center;
+    color: black;
+  text-decoration: none;
+  }
+  .linkRegister{
+    color:#0E145B;
+  }
+  .linkRegister:hover{
+    text-decoration: underline;
+  }
+
+footer{
+  font-family: "Piazzolla";
+    background-color: #0D9DE9;
+    height: 500px;  
+    border:0;
+    width: 100%;
+    flex: 0 0 auto;
+    bottom: 0;
+    padding: 30px 100px 30px 100px;
+}
+
+
+.copir{
+  margin: 10px 0 10px 0;
+  color: #0E145B;
+  font-size: 20px;
+}
+
+.navInFooter{
+display: flex;
+flex-direction: column;
+}
+.fot{
+  display: flex;
+ flex-direction: column;
+ margin:0;
+}
+.footerDiv{
+ display: flex;
+ justify-content: space-around;
+}
+.socInFooter{
+width: 100%;
+margin: 0;
+
+}
+#mapFooter{
+  position: relative;
+  display: flex;
+  align-items: center;
+  float: right;
+  width:600px;
+  height:auto;
+  
+}
+
+.socialNetwork{
+    width: 100px;
+    margin-right: 10px;
+    
+}
+.logo2{
+  height: auto;
+  /*margin: 3% 10% 3% 10%;*/
+  width: 100px;
+}
+
+
+/*чтобы убрать стрелки в инпуте*/
+  input[type="number"]::-webkit-inner-spin-button, 
+  input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+  
+
+
+  @media(max-width: 540px) { 
+
+    
+.burger-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  /*visibility: hidden;*/
+}
+.burger {
+  float: right;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 26px;
+}
+.burger::before,
+.burger::after {
+  content: '';
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background: #3e4346;
+}
+.burger::before {
+  top: 0;
+  box-shadow: 0 11px 0 #3e4346;
+  transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+.burger::after {
+  bottom: 0;
+  transition: bottom .3s .15s, transform .3s;
+}
+.burger-checkbox:checked + .burger::before {
+  top: 11px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0,0,0,0);
+  transition: box-shadow .15s, top .3s, transform .3s .15s;
+}
+.burger-checkbox:checked + .burger::after {
+  bottom: 11px;
+  transform: rotate(-45deg);
+  transition: bottom .3s, transform .3s .15s;
+}
+.menu-list {
+  float: right;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: grid;
+  gap: 12px;
+  padding: 25px 0;
+  margin: 0;
+  background: #0C9CEA;
+  list-style-type: none;
+  transform: translateX(-100%);
+  transition: .3s;
+  width: 200px;
+}
+.menu-item:hover{
+  background: #3e4346;
+}
+.menu-item {
+  display: block;
+  padding: 8px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.burger-checkbox:checked ~ .menu-list {
+  transform: translateX(0);
+}
+
+
+
+
+    .forma{
+      margin: 30px 20px;/* */
+      
+     }
+
+    .inp{
+      width: 240px;
+      margin: 2px; 
+      height: 30px;
+      padding: 3px;
+    }
+    .sub{
+      width: 240px;
+      height: 40px;
+      /*margin: 10px;*/
+      font-size: 15px;
+    }
+    .label{
+      font-size: 20px;
+      
+    }
+    .passportSeries{
+      width: 80px;
+      
+    }
+    .passportNumber{
+      width: 145px;
+      
+    }
+    .showPassword{
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+    }
+    .checkboxPass{
+      font-size: 15px;
+      margin: 10px 0 10px 0;
+    }
+    #pRegistration{
+      font-size: 30px;
+      
+    }
+
+    #pName1, #pName2, #pSurname1,#pSurname2,
+    #pPatronymic, #pPhone1, #pPhone2, #pPassport1,
+    #pPassport2, #pDateB1, #pDateB2,
+    #pPassword1, #spanPassword2,
+    #pPasswordRepete1, #pPasswordRepete2{
+      width: 240px;
+    }
+
+
+    footer{
+      background-color: #0D9DE9;
+      height: auto;  
+      border:0;
+      width: auto;
+      padding: 30px 20px 30px 20px;
+      display: flex;
+      flex: 0 0 auto;
+      align-items: center;
+      justify-content: center;
+      /*bottom: 0;
+      top:0;
+      right: 0;*/
+  
+  }
+
+  
+
+  .navInFooter{
+  display: flex;
+  flex-direction: column;
+
+  }
+  .footerDiv{
+   display: flex;
+   flex-direction: column;
+   
+  }
+  /*.socInFooter{
+  width: 100%;
+  }*/
+  #mapFooter{
+    display: flex;
+    align-items: center;
+    float: inline-end;
+    width:300px;
+    height:auto;
+    padding: 20px;/**/
+  }
+  
+
+
+  .logo2{
+    height: auto;
+    /*margin: 3% 10% 3% 10%;*/
+    width: 100px;
+    
+  }
+ /*  .socInFooter{
+   margin: 3% 10% 3% 10%;
+  }*/
+  .socialNetwork{
+width: 60px;
+height: auto;
+/*display:block;
+flex-direction:inherit;*/
+  }
+  .menu{
+    display: block;
+    }
+.item:hover{
+background-color: #b9d7fc;
+}
+    .navigation{
+      display: none;
+    }
+
+    #inputInProfile{
+      display: block;
+    }
+
+    .nav2{
+  
+      width: 100%;
+        
+       
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+   }
+
+  /* @media (min-width: 1200px) { 
+    .label{
+      font-size: 30px;
+  
+    }
+   }*/
+
+
+   @media(min-width: 540px) and (max-width: 950px) { 
+
+   }
+
+
+   .sub:disabled { 
+    background-color:#aaa; 
+    border: 1px solid #666; 
+  }
+  .sub:disabled { 
+    background-color:#aaa; 
+    border: 1px solid #666; 
+  }
+  .sub:hover:enabled{
+    background-color: #64bbf5;
+  }
