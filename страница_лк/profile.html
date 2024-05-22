@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="style_profile.css">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Личный кабинет</title>
+    
+</head>
+
+<body id="bodyTop">
+    <header>
+        <nav>
+            <div class="nav">
+                <div class="nav2">
+                    <a href="../index.html">
+                        <img src="../img/logo.png" class="logo" alt="Логотип">
+                    </a>
+                   
+                    <a href="#" class="navigation">Акции</a>
+                    <a href="../страница_брони/booking.html" class="navigation">Бронирование</a>
+                    <a href="../страница_точки_проката/rentplace.html" class="navigation">Точки проката</a>
+                    <a href="../страница_лк/profile.html" class="navigation">Личный кабинет</a>
+                    <a href="../index.html" id="inputInProfile" class="navigation">Выйти</a>
+                
+    
+               
+               <div class="menu">
+                    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                    <label for="burger-checkbox" class="burger"></label>
+                    <ul class="menu-list">
+                        <li class="item"><a href="#" class="menu-item">Акции</a><li>
+                        <li class="item"><a href="../страница_брони/booking.html" class="menu-item">Бронирование</a><li>
+                        <li class="item"><a href="../страница_лк/profile.html" class="menu-item">Личный кабинет</a><li>
+                            <li class="item"><a href="../страница_точки_проката/rentplace.html" class="menu-item">Точки проката</a><li>
+                    </ul>
+                </div>
+      <!----></div>
+    
+            </div>
+        </nav>
+    </header>
+    <div id="main" class="main">
+
+
+        <div class="profile">
+            
+            <div class="prof">
+                <p id="pProfile">Личный кабинет</p>
+
+                    <div class="ppp">
+                        <div class="profBut">
+                            <label id="labelBookings">
+                                Количество бронирований
+                                <input type="number" id="bookings"></input>
+                            </label>
+                            <label id="labelBookings">
+                                Баллы
+                                <input type="number" id="bookings"></input>
+                            </label>
+                            <a href="../история_брони/history.html" class="butProf">История бронирования</a>
+                            <a href="../страница_банк_карты/cards.html" class="butProf">Банковские карты</a>
+                            <a id="outputBut"  href="../index.html">
+                                <button class="sub" type="button">Выйти</button>
+                            </a>
+
+                        </div>
+
+
+                        <div class="forma">
+                            <form class="formaProfile" name="myProfile" >
+                            
+                                <label class="label">
+                                    Имя
+                                    <input class="inp" id="name" type="text" required name="name" placeholder="">
+                                
+                                </label>
+                            
+                                <label class="label">
+                                    Фамилия
+                                    <input class="inp" id="surname" type="text" required name="surname" placeholder=""> 
+                                
+                                </label>
+                            
+                                
+                                <label class="label">
+                                    <span class="star">Отчество</span>          
+                                    <input class="inp" id="patronymic" type="text" placeholder=" ">
+                            
+                                </label>
+                
+                                <label class="label">  
+                                    Телефон
+                                
+                                    <input class="inp" id="phoneInput" type="tel" minlength="11" maxlength="11" name="phone" required placeholder=" ">
+                                </label>
+            
+            
+                                <label class="label">
+                                    Паспортные данные               
+                                    <span id="passports">          
+                                        <input id="passportSeries" type="number" min="4" max="14" required name="passportData" placeholder="серия">
+                                        <input id="passportNumber" type="number" min="6" max="6" required name="passportData" placeholder="номер">
+                                    </span>  
+                                
+                                </label>
+            
+                                <label class="label">
+                                    Дата рождения
+                                    <!--<input class="phone" type="tel" name="phone" pattern="^[+][0-9]{11}$" required placeholder=" " value="+7">-->
+                                    <input class="inp" id="dateB" type="date" name="dateB" required>
+                                    
+                                </label>
+            
+            
+                
+                                <label class="label">
+                                    Пароль
+                                    <span class="inputs">
+                                        <input class="inp" id="pass" minlength="8"  type="password" placeholder="">
+                                        <span class="checkboxPass"><input type="checkbox" class="showPassword">Показать пароль</span>  
+                                    </span> 
+                                    
+                                </label>
+                               
+
+
+                            </form>
+                            <button class="sub" id="redSub" type="button">Редактировать</button>
+                        </div>
+                    </div>
+
+                    
+            </div>
+        </div>
+
+
+        
+<footer>
+    <div class="footerDiv">
+        <div class="fot">
+            <div class="navInFooter">  
+                <a href="#" class="footerNav">Акции</a>
+                <a href="../страница_брони/booking.html" class="footerNav">Бронирование</a>
+                <a href="../страница_точки_проката/rentplace.html" class="footerNav">Точки проката</a>
+                <a href="../страница_лк/profile.html" class="footerNav">Личный кабинет</a>
+            </div> 
+            <div>  
+                <div class="socInFooter">
+                    <img class="socialNetwork" id="mail" src="../img/mail.png" alt="Социальная сеть 'Почта'">
+                    <img class="socialNetwork" id="vk" src="../img/vk.png" alt="Социальная сеть 'Вконтакте'">
+                    <img class="socialNetwork" id="telegram" src="../img/telegram.png" alt="Социальная сеть 'Телеграм'">
+                    <img class="socialNetwork" id="phone" src="../img/phone.png" alt="'Телефон'">
+                </div>
+                <a href="../index.html">
+                    <img src="../img/logo.png" class="logo2" alt="Логотип компании 'Квадрокоптер+'">
+                </a>
+                <div class="copir">Политика конфидециальности<br>
+                    ©2024 "Квадрокоптер+"" <br>
+                    Аренда квадрокоптеров и дронов. <br>
+                    Все права защищены.
+                </div>
+            </div>
+        </div> 
+        <iframe id="mapFooter" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2360.887511563064!2d91.46221117731757!3d53.72026627240028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d2c22a3aeddbf0b%3A0x5eff9293d174555e!2z0KXQv9C6!5e0!3m2!1sru!2sru!4v1715661854205!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</footer>
+</div>
+    
+    <script src="script_profile.js"></script>
+    </body>
+    
+    
+    </html>

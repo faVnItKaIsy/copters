@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная страница</title>
+    
+</head>
+
+<body id="bodyTop">
+    <header>
+        <nav>
+            <div class="nav">
+                <div class="nav2">
+                    <a href="./гл_страница/index.html">
+                        <img src="./img/logo.png" class="logo" alt="Логотип">
+                    </a>
+                   
+                    <a href="#" class="navigation">Акции</a>
+                    <a href="./страница_брони/booking.html" class="navigation">Бронирование</a>
+                    <a href="./страница_точки_проката/rentplace.html" class="navigation">Точки проката</a>
+                    <a href="./страница_лк/profile.html" class="navigation">Личный кабинет</a>
+                    <a href="./страница_входа_в_лк/login.html" id="inputInProfile" class="navigation">Вход</a>
+                
+    
+               
+               <div class="menu">
+                    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                    <label for="burger-checkbox" class="burger"></label>
+                    <ul class="menu-list">
+                        <li class="item"><a href="#" class="menu-item">Акции</a><li>
+                        <li class="item"><a href="./страница_брони/booking.html" class="menu-item">Бронирование</a><li>
+                        <li class="item"><a href="./страница_лк/profile.html" class="menu-item">Личный кабинет</a><li>
+                            <li class="item"><a href="./страница_точки_проката/rentplace.html" class="menu-item">Точки проката</a><li>
+                    </ul>
+                </div>
+      <!----></div>
+    
+            </div>
+        </nav>
+    </header>
+    <div id="main" class="main">
+        
+        <div class="sl">
+            <div class="slider">
+                <div class="slider-container">
+                    <div class="slider">
+                        <img class="sliderImg" src="./img/slider1.png" alt="Слайд 1">
+                        <img class="sliderImg" src="./img/2.jpg" alt="Слайд 2">
+                        <img class="sliderImg" src="./img/3.jpg" alt="Слайд 3">
+                        <img class="sliderImg" src="./img/4.jpg" alt="Слайд 4"> 
+                    </div>
+                    <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+                    <button class="next-button" aria-label="Посмотреть следующий слайд">&gt;</button>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--.btn-up {
+            /* фиксированное позиционирование */
+            position: fixed;
+            /* цвет фона */
+            background-color: #502e8a;
+            /* расстояние от правого края окна браузера */
+            right: 20px;
+            /* расстояние от нижнего края окна браузера */
+            bottom: 0;
+            /* скругление верхнего левого угла */
+            border-top-left-radius: 8px;
+            /* скругление верхнего правого угла */
+            border-top-right-radius: 8px;
+            /* вид курсора */
+            cursor: pointer;
+            /* отображение элемента как flex */
+            display: flex;
+            /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
+            align-items: center;
+            /* выравниваем элементы внутри элемента по центру вдоль главной оси */
+            justify-content: center;
+            /* ширина элемента */
+            width: 60px;
+            /* высота элемента */
+            height: 50px;
+          }
+          
+          .btn-up::before {
+            content: "";
+            width: 40px;
+            height: 40px;
+            background: transparent no-repeat center center;
+            background-size: 100% 100%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+          }
+          
+          .btn-up_hide {
+            display: none;
+          }-->
+
+
+
+        <a href="#bodyTop">
+            <div class="btn-up btn-up_hide"></div>
+        </a>
+
+        <div class="content">
+            <div class="look">
+                <input type="text" class="input1">
+                    <div class="select">
+                        <div class="l1">
+                            <label class="label">Класс квадрокоптера</label>
+                            <select class="spisok">
+                                <option selected>Класс 1</option>
+                                <option>Класс 2</option> 
+                                <option>Класс 3</option> 
+                            </select>
+                        </div>
+
+                        <div class="l2">
+                            <label class="label">Марка</label>
+                            <select class="spisok">
+                                <option selected>Марка 1</option>
+                                <option>Марка 2</option> 
+                                <option>Марка 3</option> 
+                            </select>
+                        </div>
+                        
+                        <div class="l3">
+                            <label class="label">Модель</label>
+                            <select class="spisok">
+                                <option selected>Модель 1</option>
+                                <option>Модель 2</option> 
+                                <option>Модель 2</option> 
+                            </select>
+                        </div>
+                    </div>
+                <button type="button" id="butLook">Искать</button>
+            </div>
+
+         
+                <div id="Company" class="company">
+                    <p id="pCompany">О КОМПАНИИ</p>
+                    <p id="pInfo">Телефон: 8 (800) 111-11-11</p>
+                </div>
+           
+            <div class="news">
+                <p id="pNews">НОВОСТИ</p>
+                <div id="newsAll">
+                    <div id="new1">                       
+                        <img id="imgNews1" src="./img/2.jpg" alt="Новость 1">
+                        <h3 class="h3News">Новость 1</h3>
+                        <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, alias.</p>
+                    </div>
+                    <div id="new2">
+                        <h3 class="h3News">Новость 2</h3>
+                        <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, alias.</p>
+                        
+                    </div>
+                    <div id="new3">
+                        <h3 class="h3News">Новость 3</h3>
+                        <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique necessitatibus exercitationem saepe est vero debitis numquam assumenda nemo fugiat eius?</p>
+                        
+                    </div>
+                    <div id="new4">
+                        <img id="imgNews4" src="./img/2.jpg" alt="Новость 4">
+                        <h3 class="h3News">Новость 4</h3>
+                        <p class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, neque! Est placeat magnam minus quam sit nisi autem saepe, suscipit nulla! Consectetur numquam libero aliquam?</p>
+                        
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="infografik">
+                <p id="pCopter">ВИДЫ КВАДРОКОПТЕРОВ</p>
+            <img id="gif" src="./img/гиф4.gif" alt="Анимация гиф">
+                <!-- <img id="gif" src="../img/ggb10e71d6c3.gif">   
+            <div id="allCopters">     
+                </div>--> 
+            </div>
+            
+
+        </div>
+
+        <footer>
+            <div class="footerDiv">
+                <div class="fot">
+                    <div class="navInFooter">  
+                        <a href="#" class="footerNav">Акции</a>
+                        <a href="./страница_брони/booking.html" class="footerNav">Бронирование</a>
+                        <a href="./страница_точки_проката/rentplace.html" class="footerNav">Точки проката</a>
+                        <a href="./страница_лк/profile.html" class="footerNav">Личный кабинет</a>
+                    </div> 
+                    <div>  
+                        <div class="socInFooter">
+                            <img class="socialNetwork" id="mail" src="./img/mail.png" alt="Социальная сеть 'Почта'">
+                            <img class="socialNetwork" id="vk" src="./img/vk.png" alt="Социальная сеть 'Вконтакте'">
+                            <img class="socialNetwork" id="telegram" src="./img/telegram.png" alt="Социальная сеть 'Телеграм'">
+                            <img class="socialNetwork" id="phone" src="./img/phone.png" alt="'Телефон'">
+                        </div>
+                        <a href="./index.html">
+                            <img src="./img/logo.png" class="logo2" alt="Логотип компании 'Квадрокоптер+'">
+                        </a>
+                        <div class="copir">Политика конфидециальности<br>
+                            ©2024 "Квадрокоптер+"" <br>
+                            Аренда квадрокоптеров и дронов. <br>
+                            Все права защищены.
+                        </div>
+                    </div>
+                </div> 
+                <iframe id="mapFooter" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2360.887511563064!2d91.46221117731757!3d53.72026627240028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d2c22a3aeddbf0b%3A0x5eff9293d174555e!2z0KXQv9C6!5e0!3m2!1sru!2sru!4v1715661854205!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
