@@ -1,1 +1,1 @@
-https://faVnItKaIsy.github.io/copters/
+https://faVnItKaIsy.github.io/copter/
