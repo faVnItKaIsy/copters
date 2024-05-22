@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="style_history.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <title>История бронирования</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav">
+                <div class="nav2">
+                    <a href="../index.html">
+                        <img src="../img/logo.png" class="logo" alt="Логотип">
+                    </a>
+                   
+                    <a href="#" class="navigation">Акции</a>
+                    <a href="../страница_брони/booking.html" class="navigation">Бронирование</a>
+                    <a href="../страница_точки_проката/rentplace.html" class="navigation">Точки проката</a>
+                    <a href="../страница_лк/profile.html" class="navigation">Личный кабинет</a>
+                    <a href="../страница_входа_в_лк/login.html" id="inputInProfile" class="navigation">Вход</a>
+                
+    
+               
+               <div class="menu">
+                    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                    <label for="burger-checkbox" class="burger"></label>
+                    <ul class="menu-list">
+                        <li class="item"><a href="#" class="menu-item">Акции</a><li>
+                        <li class="item"><a href="../страница_брони/booking.html" class="menu-item">Бронирование</a><li>
+                        <li class="item"><a href="../страница_точки_проката/rentplace.html" class="menu-item">Точки проката</a><li>
+                        <li class="item"><a href="../страница_лк/profile.html" class="menu-item">Личный кабинет</a><li>
+                        <!--<li class="item"><a href="#" class="menu-item">Контакты</a><li>-->
+                    </ul>
+                </div>
+      <!----></div>
+    
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main">
+            <p id="pBooking">История бронирования</p>
+            <div class="booking">
+                
+                <div class="bookingCopters">
+                    
+    
+                            <div class="bookingCvadr">
+                                <div class="bookingCvadr1">
+                                    <img class="copters" src="../img/к1.png" alt="Слайд 1">
+                                </div>
+                                <div class="bookingCvadr2">    
+                                    <div class="label-and-input"> 
+                                        <label class="label1">ID</label>
+                                        <input class="inpMarkaAndId" id="idCopters" type="text" required name="idCopters" placeholder="">
+                                    </div>
+                                    <div class="label-and-input"> 
+                                        <label class="label1">Марка</label>
+                                        <input class="inpMarkaAndId" id="marka" type="text" required name="marka" placeholder="">
+                                    </div>
+                                </div>
+    
+                                <div class="bookingCvadr3">
+                                    <span class="cvadrSpan">Аренда квадрокоптера</span>
+                                    <br>
+                                    <span class="cvadrSpan">Квадрокоптер Fimi X8 Mini</span>
+                                </div>
+    
+                                
+    
+    
+                                <div class="bookingCvadr4">
+                                    <div class="label-and-input2"> 
+                                        <label class="label1">Дата бронирования</label>
+                                        <input class="inpDateAndTime" id="bookingDate" type="date" required name="bookingDate" placeholder="">
+                                    </div>
+                                    <div class="label-and-input2"> 
+                                        <label class="label1">Дата возврата</label>
+                                        <input class="inpDateAndTime" id="returnDate" type="date" required name="returnDate" placeholder="">
+                                    </div>
+                                </div>
+                            
+    
+                                <div class="bookingCvadr5">
+                                    <div class="label-and-input2"> 
+                                        <label class="label1">Время бронирования</label>
+                                        <input class="inpDateAndTime" id="bookinTime" type="time" required name="bookinTime" placeholder="">
+                                    </div>
+                                    <div class="label-and-input2"> 
+                                        <label class="label1">Время возврата</label>
+                                        <input class="inpDateAndTime" id="returnTime" type="time" required name="returnTime" placeholder="">
+                                    </div>
+                                </div>
+    
+                                <div class="bookingCvadr6">
+                                    <div class="label-and-input2"> 
+                                        <label class="label1">Количество</label>
+                                        <input class="inpDateAndTime" id="bookinTime" type="number" required name="bookinTime" placeholder="">
+                                    </div>
+                                    
+                                </div>
+    
+                                <div class="bookingCvadr7">
+                                    <div id="cvSpan">
+                                        <span class="cvadrSpan">1350 руб.</span>
+                                        <br>
+                                        <span class="cvadrSpan2">1 час - 1350 руб.<br>6 часов - 8000 руб.<br>Сутки - 12000 руб.</span>
+                                    </div>
+                                </div>
+    
+    
+                            </div>
+    
+                            
+                                
+                            </div>
+                            <div class="summaAndBut">
+                                <span class="summaSpan">Общая стоимость:</span>
+                                <span class="summa">1350 руб.</span>
+                                <button class="sub" id="redSub" type="button">Бронировать</button> 
+                            </div>
+                    
+                </div>
+                      
+            </div>
+
+
+
+
+        </div>
+    </main>    
+    <footer>
+        <div class="footerDiv">
+            <div class="fot">
+                <div class="navInFooter">  
+                    <a href="#" class="footerNav">Акции</a>
+                    <a href="../страница_брони/" class="footerNav">Бронирование</a>
+                    <a href="../страница_точки_проката/rentplace.html" class="footerNav">Точки проката</a>
+                    <a href="../страница_лк/profile.html" class="footerNav">Личный кабинет</a>
+                </div> 
+                <div>  
+                    <div class="socInFooter">
+                        <img class="socialNetwork" id="mail" src="../img/mail.png" alt="Социальная сеть 'Почта'">
+                        <img class="socialNetwork" id="vk" src="../img/vk.png" alt="Социальная сеть 'Вконтакте'">
+                        <img class="socialNetwork" id="telegram" src="../img/telegram.png" alt="Социальная сеть 'Телеграм'">
+                        <img class="socialNetwork" id="phone" src="../img/phone.png" alt="'Телефон'">
+                    </div>
+                    <a href="../index.html">
+                        <img src="../img/logo.png" class="logo2" alt="Логотип компании 'Квадрокоптер+'">
+                    </a>
+                    <div class="copir">Политика конфидециальности<br>
+                        ©2024 "Квадрокоптер+"" <br>
+                        Аренда квадрокоптеров и дронов. <br>
+                        Все права защищены.
+                    </div>
+                </div>
+            </div> 
+            <iframe id="mapFooter" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2360.887511563064!2d91.46221117731757!3d53.72026627240028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d2c22a3aeddbf0b%3A0x5eff9293d174555e!2z0KXQv9C6!5e0!3m2!1sru!2sru!4v1715661854205!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+
+    <script src="script_history.js"></script>
+</body>
+</html>
